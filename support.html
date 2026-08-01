@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Help &amp; Support · Simply Home</title>
+<style>
+  :root{--ink:#001227;--abyss:#04182E;--cloud:#F7F7F7;--mist:#9DA1A5;--cyan:#03C3DD;--outline:#0C3350}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--ink);color:var(--cloud);
+       font:16px/1.7 -apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,sans-serif}
+  .wrap{max-width:760px;margin:0 auto;padding:40px 22px 80px}
+  header{border-bottom:1px solid var(--outline);padding-bottom:22px;margin-bottom:34px}
+  .mark{font-weight:800;letter-spacing:.14em;font-size:19px}
+  .mark span{color:var(--cyan)}
+  .tag{color:var(--cyan);font-size:13px;letter-spacing:.05em;margin-top:4px}
+  nav{margin-top:20px;font-size:15px}
+  nav a{color:var(--cyan);text-decoration:none;margin-right:20px}
+  nav a:hover{text-decoration:underline}
+  nav a[aria-current]{color:var(--cloud);border-bottom:2px solid var(--cyan);padding-bottom:2px}
+  h1{font-size:27px;font-weight:700;margin:0 0 6px}
+  h2{font-size:19px;font-weight:600;margin:38px 0 10px}
+  .updated{color:var(--mist);font-size:14px;margin-bottom:30px}
+  p,li{color:#DDE3E8}
+  ul{padding-left:20px}
+  li{margin-bottom:9px}
+  .q{background:var(--abyss);border:1px solid var(--outline);border-radius:16px;padding:18px 22px;margin:16px 0}
+  .q h3{margin:0 0 8px;font-size:17px;font-weight:600;color:var(--cloud)}
+  .q p:last-child{margin-bottom:0}
+  .contact{background:var(--abyss);border:1px solid var(--outline);border-left:3px solid var(--cyan);
+           border-radius:16px;padding:20px 24px;margin:30px 0}
+  strong{color:var(--cloud)}
+  a{color:var(--cyan)}
+  footer{margin-top:56px;padding-top:22px;border-top:1px solid var(--outline);color:var(--mist);font-size:14px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div class="mark">SIMPLY <span>HOME</span></div>
+  <div class="tag">Simply Made.</div>
+  <nav>
+    <a href="privacy.html">Privacy</a>
+    <a href="terms.html">Terms</a>
+    <a href="support.html" aria-current="page">Support</a>
+  </nav>
+</header>
+
+<h1>Help &amp; Support</h1>
+<div class="updated">Simply Home for Android · Last updated 30 July 2026</div>
+
+<p>Answers to the questions we get most. If yours isn't here, write to us — the address is at the
+bottom, and a real person reads it.</p>
+
+<h2>Your data</h2>
+
+<div class="q">
+  <h3>I got a new phone. How do I move my binder across?</h3>
+  <p>On the old phone: <strong>Settings → Backup &amp; Restore → Create backup</strong>. Save the file
+  somewhere you can reach from the new phone — Drive, email it to yourself, a memory card. On the new
+  phone, install Simply Home and use <strong>Restore from backup</strong>.</p>
+  <p>Do this <em>before</em> you wipe the old phone. Android's own phone-to-phone transfer does
+  <strong>not</strong> carry Simply Home's data, deliberately: the binder is encrypted with a key
+  that is locked to the original device and cannot be transferred, so a copied database would arrive
+  unreadable. The backup file is built to be portable, which is why it is the supported route.</p>
+</div>
+
+<div class="q">
+  <h3>Should I set a password on the backup?</h3>
+  <p>Yes, unless you are saving it somewhere only you can reach. Without a password the file is
+  <strong>plain readable text</strong> — anyone who opens it sees everything, including your photos.
+  With one, it is encrypted with AES-GCM and a 200,000-iteration key.</p>
+  <p>We cannot recover a backup password. If you forget it, that file is unreadable, permanently.</p>
+</div>
+
+<div class="q">
+  <h3>I uninstalled the app. Can you get my data back?</h3>
+  <p>No, and we want to be straight about why: we never had it. Nothing you enter is sent to us, and
+  the encryption key lives in your phone's secure hardware. When the app is uninstalled, Android
+  deletes both. There is no copy anywhere for us to restore from.</p>
+  <p>If you have a backup file, restoring it will bring everything back.</p>
+</div>
+
+<div class="q">
+  <h3>Is my binder really encrypted?</h3>
+  <p>Yes. The database uses SQLCipher with AES-256, and the key is generated on your device and kept
+  in the Android Keystore. You can add a second gate — fingerprint, face, or your screen lock — under
+  <strong>Settings → Lock the binder</strong>.</p>
+</div>
+
+<h2>Photos</h2>
+
+<div class="q">
+  <h3>My photo is sideways.</h3>
+  <p>Open the item, tap the photo to view it full screen, and use <strong>Rotate</strong>. Each tap
+  turns it 90°.</p>
+  <p>If this affected photos you added before version 1.0, that was a bug in how orientation was read
+  from the camera, and it is fixed — but the information needed to correct those older photos
+  automatically is gone, so they have to be rotated by hand. New photos should come in the right way
+  up.</p>
+</div>
+
+<div class="q">
+  <h3>How do I crop or delete a photo?</h3>
+  <p>Tap the photo on the item screen to open it full screen. <strong>Rotate</strong>,
+  <strong>Crop</strong> and <strong>Delete</strong> are along the bottom. In Crop, drag the corners,
+  then tap the tick. Swipe left and right to move between an item's photos, and pinch to zoom.</p>
+  <p>To remove a photo while editing an item, tap the small ✕ on its thumbnail.</p>
+</div>
+
+<div class="q">
+  <h3>Can I add more than one photo to an item?</h3>
+  <p>Yes, as many as you like — the label, the model plate, the serial number, the receipt. Use the
+  camera icon to take them one at a time, or the gallery icon to pick several at once.</p>
+</div>
+
+<h2>Reminders</h2>
+
+<div class="q">
+  <h3>A reminder didn't arrive.</h3>
+  <p>Almost always battery optimisation. Android is allowed to hold back background work to save
+  power, and some manufacturers are far more aggressive than others.</p>
+  <p>Check: <strong>Android Settings → Apps → Simply Home → Battery</strong> and choose
+  <em>Unrestricted</em>; and <strong>→ Notifications</strong> to confirm they are allowed. If you
+  declined the notification prompt when you first opened the app, that is where to turn it back on.</p>
+  <p>Please also don't rely on a reminder as the only safeguard for anything with a safety
+  consequence.</p>
+</div>
+
+<div class="q">
+  <h3>How do warranty reminders work?</h3>
+  <p>Turn on <strong>Warranty</strong> when adding or editing an item, set the expiry date, then
+  choose how many days ahead you want to hear about it. The app manages that reminder for you — it
+  updates if you change the date, and disappears if you turn the warranty off. You'll see it in the
+  Reminders list marked as managed by the item.</p>
+</div>
+
+<h2>Premium and purchases</h2>
+
+<div class="q">
+  <h3>What does Premium include?</h3>
+  <p>PDF export, and no advertising. It is a <strong>one-time purchase</strong> — not a subscription,
+  and it does not renew. Backup and restore are free and always will be; getting your own data out
+  should never be behind a price.</p>
+</div>
+
+<div class="q">
+  <h3>I paid, but the app still shows ads.</h3>
+  <p>Open <strong>Settings → Restore purchase</strong>. That re-checks with Google Play and unlocks
+  it. Make sure the phone is signed in to the same Google account you paid with.</p>
+  <p>If you paid by a method that needs approval — a cash top-up, or a family "ask to buy" request —
+  Play may still be holding the purchase. Those can take a couple of days to clear, and the app will
+  unlock on its own once they do. Please don't buy a second time.</p>
+</div>
+
+<div class="q">
+  <h3>How do I get a refund?</h3>
+  <p>Refunds are handled by Google Play, not by us — we have no way to issue one. Use
+  <a href="https://support.google.com/googleplay/answer/2479637">Google's refund process</a>. If
+  something in the app is broken, tell us first; we would rather fix it.</p>
+</div>
+
+<h2>Ads and privacy</h2>
+
+<div class="q">
+  <h3>How do I change my ad consent choice?</h3>
+  <p><strong>Settings → Ad privacy options</strong>. That row only appears where the choice applies —
+  the EEA, the UK and Switzerland. Everywhere else there is no consent form to reopen. You can also
+  reset your Advertising ID in <strong>Android Settings → Privacy → Ads</strong>.</p>
+</div>
+
+<div class="q">
+  <h3>Does the app send my binder anywhere?</h3>
+  <p>No. The app makes no network request of its own — the internet permission exists for the ad
+  banner and for Google Play purchases, and nothing else. The only ways anything leaves your phone
+  are ones you start yourself: a backup, a PDF, or a screenshot you choose to attach to a feedback
+  email. Full detail in the <a href="privacy.html">Privacy Policy</a>.</p>
+</div>
+
+<div class="contact">
+  <h2 style="margin-top:0">Still stuck?</h2>
+  <p>Email <a href="mailto:support@cypresstech.net">support@cypresstech.net</a>, or use
+  <strong>Settings → Send feedback</strong> in the app — that one attaches your app version and
+  device model automatically, which usually saves a round trip.</p>
+  <p>Please tell us what you expected to happen and what happened instead. If you can include a
+  screenshot, even better.</p>
+</div>
+
+<footer>
+  © 2026 Cypress Technology · Cypress Group, LLC · Simply Made.<br>
+  <a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a> · <a href="support.html">Support</a>
+</footer>
+
+</div>
+</body>
+</html>

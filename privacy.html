@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy · Simply Home</title>
+<style>
+  :root{--ink:#001227;--abyss:#04182E;--cloud:#F7F7F7;--mist:#9DA1A5;--cyan:#03C3DD;--outline:#0C3350}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--ink);color:var(--cloud);
+       font:16px/1.7 -apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,sans-serif}
+  .wrap{max-width:760px;margin:0 auto;padding:40px 22px 80px}
+  header{border-bottom:1px solid var(--outline);padding-bottom:22px;margin-bottom:34px}
+  .mark{font-weight:800;letter-spacing:.14em;font-size:19px}
+  .mark span{color:var(--cyan)}
+  .tag{color:var(--cyan);font-size:13px;letter-spacing:.05em;margin-top:4px}
+  nav{margin-top:20px;font-size:15px}
+  nav a{color:var(--cyan);text-decoration:none;margin-right:20px}
+  nav a:hover{text-decoration:underline}
+  nav a[aria-current]{color:var(--cloud);border-bottom:2px solid var(--cyan);padding-bottom:2px}
+  h1{font-size:27px;font-weight:700;margin:0 0 6px}
+  h2{font-size:19px;font-weight:600;margin:38px 0 10px;color:var(--cloud)}
+  .updated{color:var(--mist);font-size:14px;margin-bottom:30px}
+  p,li{color:#DDE3E8}
+  ul{padding-left:20px}
+  li{margin-bottom:9px}
+  .card{background:var(--abyss);border:1px solid var(--outline);border-radius:16px;padding:20px 24px;margin:26px 0}
+  .card h2{margin-top:0}
+  strong{color:var(--cloud)}
+  table{width:100%;border-collapse:collapse;margin:16px 0;font-size:15px}
+  th,td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--outline);vertical-align:top}
+  th{color:var(--cyan);font-weight:600}
+  a{color:var(--cyan)}
+  footer{margin-top:56px;padding-top:22px;border-top:1px solid var(--outline);color:var(--mist);font-size:14px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div class="mark">SIMPLY <span>HOME</span></div>
+  <div class="tag">Simply Made.</div>
+  <nav>
+    <a href="privacy.html" aria-current="page">Privacy</a>
+    <a href="terms.html">Terms</a>
+    <a href="support.html">Support</a>
+  </nav>
+</header>
+
+<h1>Privacy Policy</h1>
+<div class="updated">Simply Home for Android · Last updated 30 July 2026</div>
+
+<div class="card">
+  <h2>The short version</h2>
+  <p>Simply Home keeps your home inventory <strong>on your phone</strong>, encrypted. There are no
+  accounts, and we operate no server that your binder is sent to. The app uses the internet for two
+  things only: the advertising banner on the free tier, and Google Play purchases.</p>
+  <p>We do not receive, see, or store anything you put in the app.</p>
+</div>
+
+<h2>What the app stores, and where</h2>
+<p>Everything you enter — item names, categories, rooms, notes, custom detail fields, warranty and
+purchase dates, reminders, and photos — is written to storage that belongs to this app on your own
+device.</p>
+<ul>
+  <li>The database is encrypted at rest with <strong>SQLCipher</strong> (AES-256).</li>
+  <li>The encryption key is generated on your device, stored in the <strong>Android Keystore</strong>,
+      and never transmitted. It cannot be extracted from the device or recovered by us.</li>
+  <li>Photos are saved in this app's private storage area, which other apps cannot read.</li>
+  <li>You can additionally require your fingerprint, face, or screen lock to open the app.</li>
+</ul>
+<p>Uninstalling the app deletes all of it. Because we hold no copy, we cannot restore it for you —
+please use Settings → Backup &amp; Restore before you switch devices.</p>
+
+<h2>What is collected, and by whom</h2>
+<p>Simply Home itself collects nothing. However, on the free tier the app displays advertising
+supplied by <strong>Google AdMob</strong>, and that SDK collects data. If you buy the one-time
+premium upgrade, the advertising SDK is never started at all and none of the following applies.</p>
+
+<table>
+  <tr><th>Data</th><th>Collected by</th><th>Purpose</th></tr>
+  <tr><td>Advertising ID (a resettable device identifier)</td><td>Google AdMob</td><td>Advertising, measurement, fraud prevention</td></tr>
+  <tr><td>Approximate location, derived from IP address</td><td>Google AdMob</td><td>Serving regionally appropriate ads</td></tr>
+  <tr><td>App interaction and diagnostic data</td><td>Google AdMob</td><td>Ad delivery and performance</td></tr>
+  <tr><td>Purchase transaction</td><td>Google Play</td><td>Processing and restoring your purchase</td></tr>
+</table>
+
+<p>None of this includes the contents of your binder. Google's handling of it is governed by the
+<a href="https://policies.google.com/technologies/partner-sites">Google Privacy Policy</a>.</p>
+
+<p>You can reset or delete your Advertising ID at any time in <strong>Android Settings → Privacy →
+Ads</strong>. In the EEA, the UK and Switzerland the app presents a consent form on first launch,
+and you can change that choice later at <strong>Settings → Ad privacy options</strong>.</p>
+
+<h2>The three times data can leave your phone — all started by you</h2>
+<p>Nothing below happens automatically. Each requires a deliberate action, and in each case you
+choose the destination.</p>
+<ul>
+  <li><strong>Backup.</strong> Settings → Backup &amp; Restore writes a file to a location you pick.
+      If you set a password it is encrypted (PBKDF2, 200,000 iterations, AES-GCM). If you skip the
+      password, <em>the file is readable by anyone who opens it</em> — the app warns you at the
+      time.</li>
+  <li><strong>PDF export.</strong> Premium only. Writes a document to a location you pick. Photos are
+      not included.</li>
+  <li><strong>Send feedback.</strong> Composes an email in your own mail app containing your message,
+      your app version and device model, and — only if you attach one — a screenshot. Nothing is sent
+      until you press send in your mail app, and you can edit or delete any part of it first.</li>
+</ul>
+
+<h2>Permissions</h2>
+<ul>
+  <li><strong>Internet / network state</strong> — advertising and Google Play purchases only. The app
+      makes no network request of its own.</li>
+  <li><strong>Notifications</strong> — maintenance reminders you create.</li>
+  <li><strong>Biometrics</strong> — the optional app lock. Your fingerprint or face data is handled
+      entirely by Android; the app never sees it.</li>
+  <li><strong>Run at startup</strong> — so reminders survive a restart.</li>
+</ul>
+<p>Simply Home does <strong>not</strong> request camera or storage permissions. Taking a photo hands
+off to your camera app, and choosing one uses the Android photo picker, which gives the app only the
+picture you selected.</p>
+
+<h2>Children</h2>
+<p>Simply Home is not directed to children and is not intended for anyone under 13. We do not
+knowingly collect information from children.</p>
+
+<h2>Your choices</h2>
+<ul>
+  <li>Delete any item, photo, or reminder in the app at any time.</li>
+  <li>Uninstall to erase everything on the device.</li>
+  <li>Buy premium to stop the advertising SDK from running.</li>
+  <li>Reset your Advertising ID in Android Settings.</li>
+</ul>
+<p>Because we hold no personal data about you, there is nothing for us to export or delete on
+request — but if you have a question, please write to us.</p>
+
+<h2>Changes</h2>
+<p>If this policy changes materially we will update the date at the top and, where the change affects
+how data is handled, note it in the app's release notes.</p>
+
+<h2>Contact</h2>
+<p>Cypress Technology · Cypress Group, LLC<br>
+<a href="mailto:support@cypresstech.net">support@cypresstech.net</a></p>
+
+<footer>
+  © 2026 Cypress Technology · Cypress Group, LLC · Simply Made.<br>
+  <a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a> · <a href="support.html">Support</a>
+</footer>
+
+</div>
+</body>
+</html>
